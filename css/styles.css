@@ -1,20 +1,39 @@
 :root {
-  /* Cores obrigatórias */
-  --cor-primaria: #2563EB;    /* Azul */
-  --cor-secundaria: #10B981;  /* Verde */
-  --cor-texto: #111827;       /* Texto escuro */
-  --cor-fundo: #F3F4F6;       /* Fundo claro */
-  --cor-borda: #E5E7EB;       /* Bordas */
-
+  /* Cores principais */
+  --cor-primaria: #2563EB;
+  --cor-primaria-hover: #1D4ED8;
+  --cor-secundaria: #10B981;
+  --cor-secundaria-hover: #059669;
+  
+  /* Cores de texto e fundo */
+  --cor-texto: #111827;
+  --cor-texto-suave: #4B5563;
+  --cor-fundo: #F3F4F6;
+  --cor-fundo-alt: #FFFFFF;
+  --cor-borda: #E5E7EB;
+  
   /* Cores para tema escuro */
-  --dark-primaria: #1D4ED8;   /* Azul mais escuro */
-  --dark-fundo: #1F2937;      /* Fundo escuro */
-  --dark-texto: #F9FAFB;      /* Texto claro */
-  --dark-borda: #374151;      /* Bordas escuras */
-
-  /* Fontes obrigatórias */
+  --dark-primaria: #1D4ED8;
+  --dark-fundo: #1F2937;
+  --dark-texto: #F9FAFB;
+  --dark-borda: #374151;
+  
+  /* Fontes */
   --fonte-titulo: 'Poppins', sans-serif;
   --fonte-texto: 'Inter', sans-serif;
+  
+  /* Sombras */
+  --sombra-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
+  --sombra-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  --sombra-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+  
+  /* Bordas */
+  --borda-radius-sm: 0.375rem;
+  --borda-radius-md: 0.5rem;
+  --borda-radius-lg: 1rem;
+  
+  /* Transições */
+  --transicao: 0.3s ease;
 }
 
 body {
