@@ -1,39 +1,104 @@
 # Guia Profissional de Desenvolvimento Web
 
-Este é um guia prático para aprender desenvolvimento web, focando em HTML, CSS e JavaScript.
+Este é um guia completo para aprender desenvolvimento web, focando em HTML, CSS e JavaScript.
 
-## Estrutura do Projeto
+## 🚀 Como usar
 
-```
-/assets         - Imagens e outros recursos
-/css           - Arquivos de estilo
-/js            - Arquivos JavaScript
-*.html         - Páginas do site
+1. Clone o repositório:
+```bash
+git clone https://github.com/DanielPaesp/guia-web-1ano--DanielPedro-.git
 ```
 
-## Páginas
+2. Abra o arquivo `index.html` em seu navegador
+3. Navegue pelas diferentes seções do guia
 
-- Home (index.html)
-- Tecnologias (tecnologias.html)
-- Boas Práticas (boas-praticas.html)
-- Fluxo de Trabalho (fluxo.html)
-- Quiz (quiz.html)
+## 📚 Conteúdo
 
-## Como Usar
+- **Home**: Introdução ao HTML, CSS e JavaScript
+- **Tecnologias**: Panorama do ecossistema web
+- **Boas Práticas**: Guia de desenvolvimento profissional
+- **Fluxo**: Da ideia ao deploy
+- **Quiz**: Teste seus conhecimentos
 
-1. Clone este repositório
-2. Abra o arquivo index.html no navegador
-3. Navegue pelo conteúdo
+## 🛠️ Tecnologias Utilizadas
 
-## Tecnologias Utilizadas
+- HTML5 semântico
+- CSS3 (Flexbox/Grid, variáveis, animações)
+- JavaScript ES6+ (módulos, localStorage)
+- SVG para fluxograma
 
-- HTML5
-- CSS3
-- JavaScript (ES6+)
-
-## Recursos
+## ✨ Funcionalidades
 
 - Menu responsivo
-- Tema claro/escuro
-- Layout em grid
-- Exemplos práticos de código
+- Tema claro/escuro com persistência
+- Filtros dinâmicos
+- Quiz interativo
+- Fluxograma interativo
+- Checklist de progresso
+
+## 🎨 Identidade Visual
+
+### Cores
+- Primária: `#2563EB` (azul)
+- Secundária: `#10B981` (verde)
+- Texto: `#111827`
+- Fundo: `#F3F4F6`
+- Bordas: `#E5E7EB`
+
+### Tipografia
+- Títulos: "Poppins"
+- Texto: "Inter"
+
+## 📱 Responsividade
+
+- Design mobile-first
+- Menu hambúrguer
+- Layout adaptativo
+- Imagens responsivas
+
+## ♿ Acessibilidade
+
+- HTML semântico
+- ARIA labels
+- Alto contraste
+- Navegação por teclado
+- Suporte a leitores de tela
+
+## 🔑 Atalhos de Teclado
+
+- `Alt + M`: Focar menu
+- `Home`: Voltar ao topo
+- `/`: Abrir busca
+
+## 📦 Estrutura do Projeto
+
+```
+/assets
+  /images
+/css
+  styles.css
+  workflow.css
+  practices.css
+/js
+  app.js
+  technologies.js
+  practices.js
+  workflow.js
+  quiz.js
+*.html
+README.md
+ChatIA.md
+```
+
+## 🤝 Créditos
+
+- Fontes: Google Fonts (Poppins, Inter)
+- Ícones: Emojis nativos
+
+## 📄 Licença
+
+Este projeto é para fins educacionais.
+
+---
+
+Desenvolvido por Daniel

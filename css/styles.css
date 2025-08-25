@@ -1,9 +1,18 @@
 :root {
-  --cor-primaria: #2563EB;
-  --cor-secundaria: #10B981;
-  --cor-texto: #111827;
-  --cor-fundo: #F3F4F6;
-  --cor-borda: #E5E7EB;
+  /* Cores obrigatórias */
+  --cor-primaria: #2563EB;    /* Azul */
+  --cor-secundaria: #10B981;  /* Verde */
+  --cor-texto: #111827;       /* Texto escuro */
+  --cor-fundo: #F3F4F6;       /* Fundo claro */
+  --cor-borda: #E5E7EB;       /* Bordas */
+
+  /* Cores para tema escuro */
+  --dark-primaria: #1D4ED8;   /* Azul mais escuro */
+  --dark-fundo: #1F2937;      /* Fundo escuro */
+  --dark-texto: #F9FAFB;      /* Texto claro */
+  --dark-borda: #374151;      /* Bordas escuras */
+
+  /* Fontes obrigatórias */
   --fonte-titulo: 'Poppins', sans-serif;
   --fonte-texto: 'Inter', sans-serif;
 }
