@@ -12,6 +12,83 @@ const questions = [
     explanation: "HTML (HyperText Markup Language) é responsável por estruturar o conteúdo da página, definindo elementos como cabeçalhos, parágrafos, listas e links."
   },
   {
+    question: "O que significa CSS em desenvolvimento web?",
+    options: [
+      "Computer Style System",
+      "Cascading Style Sheets",
+      "Creative Style Solution",
+      "Code Style Syntax"
+    ],
+    correct: 1,
+    explanation: "CSS (Cascading Style Sheets) é uma linguagem de estilo usada para descrever a apresentação de documentos HTML."
+  },
+  {
+    question: "Qual é a melhor prática para responsividade?",
+    options: [
+      "Usar apenas pixels",
+      "Começar pelo desktop",
+      "Mobile-first",
+      "Ignorar tablets"
+    ],
+    correct: 2,
+    explanation: "Mobile-first é uma abordagem de design que começa pelo mobile e progressivamente melhora para telas maiores."
+  },
+  {
+    question: "Para que serve o atributo 'alt' em imagens?",
+    options: [
+      "Melhorar SEO apenas",
+      "Acessibilidade e fallback",
+      "Carregar mais rápido",
+      "Estilizar a imagem"
+    ],
+    correct: 1,
+    explanation: "O atributo 'alt' fornece texto alternativo para imagens, essencial para acessibilidade e SEO."
+  },
+  {
+    question: "O que é o DOM?",
+    options: [
+      "Uma linguagem de programação",
+      "Um método de estilização",
+      "Representação da estrutura do documento",
+      "Um servidor web"
+    ],
+    correct: 2,
+    explanation: "O DOM (Document Object Model) é uma interface de programação para documentos HTML/XML, representando-os como uma árvore de objetos."
+  },
+  {
+    question: "Qual é a melhor prática para organização de CSS?",
+    options: [
+      "Todo CSS inline",
+      "Metodologia BEM",
+      "Sem classes",
+      "Apenas IDs"
+    ],
+    correct: 1,
+    explanation: "BEM (Block Element Modifier) é uma metodologia que ajuda a criar código CSS reutilizável e manutenível."
+  },
+  {
+    question: "O que é um commit no Git?",
+    options: [
+      "Um erro no código",
+      "Um registro de mudanças",
+      "Uma branch nova",
+      "Um arquivo deletado"
+    ],
+    correct: 1,
+    explanation: "Um commit é um registro de mudanças no repositório, contendo um snapshot das alterações feitas nos arquivos."
+  },
+  {
+    question: "Qual é o propósito do localStorage?",
+    options: [
+      "Processamento de dados",
+      "Estilização",
+      "Armazenamento no navegador",
+      "Conexão com servidor"
+    ],
+    correct: 2,
+    explanation: "localStorage permite armazenar dados no navegador do usuário de forma persistente, mesmo após fechar a página."
+  },
+  {
     question: "Qual propriedade CSS é usada para tornar um elemento flexível?",
     options: [
       "flex-box",

@@ -28,8 +28,177 @@
       <p>Aprenda as melhores práticas de desenvolvimento web</p>
     </section>
 
-    <section class="content">
-      <!-- Adicione seu conteúdo aqui -->
+    <section class="practices-container">
+      <div class="progress-bar">
+        <div class="progress" id="progress-bar"></div>
+        <span class="progress-text">0% completo</span>
+      </div>
+
+      <!-- Semântica & Acessibilidade -->
+      <article class="practice-section">
+        <button class="accordion" aria-expanded="false">
+          <h3>Semântica & Acessibilidade</h3>
+          <span class="accordion-icon">+</span>
+        </button>
+        <div class="accordion-content">
+          <div class="checklist">
+            <label class="checkbox-item">
+              <input type="checkbox" name="semantic-1"> 
+              Use tags HTML5 semânticas (header, nav, main, section)
+            </label>
+            <label class="checkbox-item">
+              <input type="checkbox" name="semantic-2">
+              Adicione atributos alt em todas as imagens
+            </label>
+            <label class="checkbox-item">
+              <input type="checkbox" name="semantic-3">
+              Mantenha contraste mínimo de 4.5:1
+            </label>
+            <label class="checkbox-item">
+              <input type="checkbox" name="semantic-4">
+              Implemente navegação por teclado
+            </label>
+          </div>
+          <div class="code-example">
+            <h4>Exemplo:</h4>
+            <pre><code>&lt;!-- Ruim -->
+&lt;div class="header">
+  &lt;div class="nav">...&lt;/div>
+&lt;/div>
+
+&lt;!-- Bom -->
+&lt;header>
+  &lt;nav aria-label="Navegação principal">
+    &lt;ul>
+      &lt;li>&lt;a href="#" aria-current="page">Home&lt;/a>&lt;/li>
+    &lt;/ul>
+  &lt;/nav>
+&lt;/header></code></pre>
+          </div>
+        </div>
+      </article>
+
+      <!-- Responsividade -->
+      <article class="practice-section">
+        <button class="accordion" aria-expanded="false">
+          <h3>Design Responsivo</h3>
+          <span class="accordion-icon">+</span>
+        </button>
+        <div class="accordion-content">
+          <div class="checklist">
+            <label class="checkbox-item">
+              <input type="checkbox" name="responsive-1">
+              Comece pelo mobile (mobile-first)
+            </label>
+            <label class="checkbox-item">
+              <input type="checkbox" name="responsive-2">
+              Use unidades relativas (rem, em, %)
+            </label>
+            <label class="checkbox-item">
+              <input type="checkbox" name="responsive-3">
+              Implemente breakpoints com @media
+            </label>
+            <label class="checkbox-item">
+              <input type="checkbox" name="responsive-4">
+              Teste em múltiplos dispositivos
+            </label>
+          </div>
+          <div class="code-example">
+            <h4>Exemplo:</h4>
+            <pre><code>/* Mobile First */
+.container {
+  width: 100%;
+  padding: 1rem;
+}
+
+/* Tablet e Desktop */
+@media (min-width: 768px) {
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+}</code></pre>
+          </div>
+        </div>
+      </article>
+
+      <!-- Performance -->
+      <article class="practice-section">
+        <button class="accordion" aria-expanded="false">
+          <h3>Performance</h3>
+          <span class="accordion-icon">+</span>
+        </button>
+        <div class="accordion-content">
+          <div class="checklist">
+            <label class="checkbox-item">
+              <input type="checkbox" name="perf-1">
+              Otimize imagens e assets
+            </label>
+            <label class="checkbox-item">
+              <input type="checkbox" name="perf-2">
+              Minimize arquivos CSS/JS
+            </label>
+            <label class="checkbox-item">
+              <input type="checkbox" name="perf-3">
+              Use lazy loading para imagens
+            </label>
+            <label class="checkbox-item">
+              <input type="checkbox" name="perf-4">
+              Implemente cache quando possível
+            </label>
+          </div>
+          <div class="code-example">
+            <h4>Exemplo:</h4>
+            <pre><code>&lt;img 
+  src="thumbnail.jpg"
+  loading="lazy"
+  srcset="small.jpg 300w,
+          medium.jpg 600w,
+          large.jpg 900w"
+  sizes="(max-width: 320px) 280px,
+         (max-width: 640px) 580px,
+         800px"
+  alt="Descrição da imagem"
+/></code></pre>
+          </div>
+        </div>
+      </article>
+
+      <!-- Versionamento -->
+      <article class="practice-section">
+        <button class="accordion" aria-expanded="false">
+          <h3>Controle de Versão</h3>
+          <span class="accordion-icon">+</span>
+        </button>
+        <div class="accordion-content">
+          <div class="checklist">
+            <label class="checkbox-item">
+              <input type="checkbox" name="git-1">
+              Use commits pequenos e frequentes
+            </label>
+            <label class="checkbox-item">
+              <input type="checkbox" name="git-2">
+              Escreva mensagens claras
+            </label>
+            <label class="checkbox-item">
+              <input type="checkbox" name="git-3">
+              Mantenha branches organizados
+            </label>
+            <label class="checkbox-item">
+              <input type="checkbox" name="git-4">
+              Faça code review
+            </label>
+          </div>
+          <div class="code-example">
+            <h4>Exemplo:</h4>
+            <pre><code># Boas mensagens de commit
+feat: adiciona sistema de login
+fix: corrige validação de formulário
+docs: atualiza README
+style: formata código CSS</code></pre>
+          </div>
+        </div>
+      </article>
     </section>
   </main>
 
