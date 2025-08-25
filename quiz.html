@@ -30,7 +30,23 @@
     </section>
 
     <section class="content">
-      <!-- Adicione seu conteúdo aqui -->
+      <div class="quiz-container">
+        <div id="quiz">
+          <div id="question-container"></div>
+          <div id="controls">
+            <button id="prev-btn" class="quiz-btn">Anterior</button>
+            <button id="next-btn" class="quiz-btn">Próxima</button>
+            <button id="submit-btn" class="quiz-btn" style="display: none;">Finalizar Quiz</button>
+          </div>
+        </div>
+        <div id="results" style="display: none;">
+          <h3>Resultados</h3>
+          <p>Sua pontuação: <span id="score">0</span> de <span id="total-questions">0</span></p>
+          <div id="explanations"></div>
+          <div id="high-score"></div>
+          <button id="retry-btn" class="quiz-btn">Tentar Novamente</button>
+        </div>
+      </div>
     </section>
   </main>
 
@@ -39,5 +55,6 @@
   </footer>
 
   <script src="js/app.js"></script>
+  <script src="js/quiz.js"></script>
 </body>
 </html>
