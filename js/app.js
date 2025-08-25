@@ -8,23 +8,48 @@ menuToggle.addEventListener("click", () => {
   menuToggle.setAttribute("aria-expanded", isExpanded);
 });
 
-// Tema claro/escuro com localStorage
+// Gerenciamento de tema com animações e transições suaves
 const themeToggle = document.getElementById("theme-toggle");
-const body = document.body;
 const prefersDark = window.matchMedia("(prefers-color-scheme: dark)");
 
-// Verifica preferência salva ou do sistema
-const savedTheme = localStorage.getItem("theme");
-if (savedTheme === "dark" || (!savedTheme && prefersDark.matches)) {
-  body.classList.add("dark");
-  themeToggle.textContent = "☀️";
+// Função para atualizar ícone com animação
+function updateThemeIcon(isDark) {
+  const currentIcon = themeToggle.textContent;
+  const newIcon = isDark ? "☀️" : "🌙";
+  
+  if (currentIcon !== newIcon) {
+    themeToggle.style.transform = "rotate(180deg)";
+    setTimeout(() => {
+      themeToggle.textContent = newIcon;
+      themeToggle.style.transform = "rotate(0deg)";
+    }, 150);
+  }
 }
 
-themeToggle.addEventListener("click", () => {
-  body.classList.toggle("dark");
-  const isDark = body.classList.contains("dark");
+// Função para definir tema
+function setTheme(isDark) {
+  document.documentElement.setAttribute("data-theme", isDark ? "dark" : "light");
+  updateThemeIcon(isDark);
   localStorage.setItem("theme", isDark ? "dark" : "light");
-  themeToggle.textContent = isDark ? "☀️" : "🌙";
+}
+
+// Inicialização do tema
+const savedTheme = localStorage.getItem("theme");
+const systemPrefersDark = prefersDark.matches;
+const initialTheme = savedTheme === "dark" || (!savedTheme && systemPrefersDark);
+setTheme(initialTheme);
+
+// Eventos
+themeToggle.addEventListener("click", () => {
+  const isDark = document.documentElement.getAttribute("data-theme") === "dark";
+  setTheme(!isDark);
+});
+
+// Observar mudanças nas preferências do sistema
+prefersDark.addEventListener("change", (e) => {
+  if (!localStorage.getItem("theme")) {
+    setTheme(e.matches);
+  }
 });
 
 // Teclas de atalho (peculiaridade 3)
